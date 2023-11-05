@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyHealthApp", "EFDal\MyHealthApp.csproj", "{CFB7990F-A626-4957-BD3B-6A0380E4ACF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyHealthApp", "MyHealthApp\MyHealthApp.csproj", "{CFB7990F-A626-4957-BD3B-6A0380E4ACF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

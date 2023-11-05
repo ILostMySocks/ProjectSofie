@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sofie\\Documents\\Graduaat programmeren\\Jaar 3\\Programmeren Specialisatie\\Project\\ProjectSofie\\EFDal\\MyHealthApp.csproj": {}
+    "C:\\Users\\sofie\\Documents\\Graduaat programmeren\\Jaar 3\\Programmeren Specialisatie\\Project\\ProjectSofie\\MyHealthApp\\MyHealthApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sofie\\Documents\\Graduaat programmeren\\Jaar 3\\Programmeren Specialisatie\\Project\\ProjectSofie\\EFDal\\MyHealthApp.csproj": {
+    "C:\\Users\\sofie\\Documents\\Graduaat programmeren\\Jaar 3\\Programmeren Specialisatie\\Project\\ProjectSofie\\MyHealthApp\\MyHealthApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sofie\\Documents\\Graduaat programmeren\\Jaar 3\\Programmeren Specialisatie\\Project\\ProjectSofie\\EFDal\\MyHealthApp.csproj",
+        "projectUniqueName": "C:\\Users\\sofie\\Documents\\Graduaat programmeren\\Jaar 3\\Programmeren Specialisatie\\Project\\ProjectSofie\\MyHealthApp\\MyHealthApp.csproj",
         "projectName": "MyHealthApp",
-        "projectPath": "C:\\Users\\sofie\\Documents\\Graduaat programmeren\\Jaar 3\\Programmeren Specialisatie\\Project\\ProjectSofie\\EFDal\\MyHealthApp.csproj",
+        "projectPath": "C:\\Users\\sofie\\Documents\\Graduaat programmeren\\Jaar 3\\Programmeren Specialisatie\\Project\\ProjectSofie\\MyHealthApp\\MyHealthApp.csproj",
         "packagesPath": "C:\\Users\\sofie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sofie\\Documents\\Graduaat programmeren\\Jaar 3\\Programmeren Specialisatie\\Project\\ProjectSofie\\EFDal\\obj\\",
+        "outputPath": "C:\\Users\\sofie\\Documents\\Graduaat programmeren\\Jaar 3\\Programmeren Specialisatie\\Project\\ProjectSofie\\MyHealthApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sofie\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EFDal.Entities
+namespace MyHealthApp.Entities
 {
     public class Day
     {
@@ -12,7 +12,7 @@ namespace EFDal.Entities
         public DateTime Today { get; set; }
         public List<Food> MyFoodToday { get; set; }
         public List<Workout> MyWorkoutsToday { get; set; }
-
+        public Calendar MyHealthCalendar { get; set; }
 
     }
 }

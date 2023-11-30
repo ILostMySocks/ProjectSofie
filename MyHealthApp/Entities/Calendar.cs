@@ -4,12 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EFDal.Entities
+namespace MyHealthApp.Entities
 {
     public class Calendar
     {
         public int Id { get; set; }
-        public Day MyHealthyDay { get; set; }
+        public List<Day> MyHealthyDays { get; set; }
+        public Person MyHealthyPerson { get; set; }
+        public int MyHealthyPersonId { get; set; }
+
+
 
     }
 }

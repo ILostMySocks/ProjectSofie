@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MyHealthApp
 {
-    //MOET static zijn => je kan de methodes aanroepen zonder te instatieren
+    //MOET static zijn => je kan de methodes aanroepen zonder te instantieren
     public static class Extensions
     {
         //extension methods moeten ook Static zijn, moeten starten met een "this" als parameter

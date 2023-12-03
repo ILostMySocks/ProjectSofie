@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MyHealthApp.Repositories
 {
-    public class GenericRepository<TEntity>
+    public class GenericRepository<TEntity> : IGenericRepository<TEntity>
         where TEntity : BaseEntity
     {
         private readonly DbContext _dbContext;

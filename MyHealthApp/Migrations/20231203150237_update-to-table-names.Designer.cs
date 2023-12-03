@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyHealthApp;
 
@@ -11,9 +12,11 @@ using MyHealthApp;
 namespace MyHealthApp.Migrations
 {
     [DbContext(typeof(MyHealthAppContext))]
-    partial class MyHealthAppContextModelSnapshot : ModelSnapshot
+    [Migration("20231203150237_update-to-table-names")]
+    partial class updatetotablenames
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -45,9 +48,6 @@ namespace MyHealthApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("LastUpdate")
-                        .HasColumnType("datetime2");
-
                     b.Property<int>("PersonId")
                         .HasColumnType("int");
 
@@ -69,9 +69,6 @@ namespace MyHealthApp.Migrations
 
                     b.Property<int>("CalendarId")
                         .HasColumnType("int");
-
-                    b.Property<DateTime>("LastUpdate")
-                        .HasColumnType("datetime2");
 
                     b.Property<DateTime>("Today")
                         .HasColumnType("datetime2");
@@ -98,9 +95,6 @@ namespace MyHealthApp.Migrations
                         .IsRequired()
                         .HasMaxLength(300)
                         .HasColumnType("nvarchar(300)");
-
-                    b.Property<DateTime>("LastUpdate")
-                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -138,9 +132,6 @@ namespace MyHealthApp.Migrations
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.Property<DateTime>("LastUpdate")
-                        .HasColumnType("datetime2");
-
                     b.HasKey("Id");
 
                     b.ToTable("People");
@@ -159,9 +150,6 @@ namespace MyHealthApp.Migrations
 
                     b.Property<int?>("DayId")
                         .HasColumnType("int");
-
-                    b.Property<DateTime>("LastUpdate")
-                        .HasColumnType("datetime2");
 
                     b.Property<string>("WorkoutName")
                         .IsRequired()

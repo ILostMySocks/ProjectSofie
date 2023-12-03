@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace MyHealthApp.Entities
 {
-    public class Food
+    public class Food : BaseEntity
     {
-        public int Id { get; set; }
         public string FoodName { get; set; }
         public int CalorieCount { get; set; }
-        public List<Day> DaysEaten { get; set; }
+        public List<Day> Days { get; set; }
 
     }
 }

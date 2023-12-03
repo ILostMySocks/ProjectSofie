@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace MyHealthApp.Entities
 {
-    public class Workout : BaseEntity
+    public class BaseEntity
     {
-        public string WorkoutName { get; set; }
-
-        public int CaloriesBurnt { get; set; }
+        public int Id { get; set; }
+        public DateTime LastUpdate { get; set; }
     }
 }

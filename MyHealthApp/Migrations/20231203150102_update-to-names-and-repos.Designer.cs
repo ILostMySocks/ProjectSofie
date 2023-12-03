@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyHealthApp;
 
@@ -11,9 +12,11 @@ using MyHealthApp;
 namespace MyHealthApp.Migrations
 {
     [DbContext(typeof(MyHealthAppContext))]
-    partial class MyHealthAppContextModelSnapshot : ModelSnapshot
+    [Migration("20231203150102_update-to-names-and-repos")]
+    partial class updatetonamesandrepos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -45,9 +48,6 @@ namespace MyHealthApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("LastUpdate")
-                        .HasColumnType("datetime2");
-
                     b.Property<int>("PersonId")
                         .HasColumnType("int");
 
@@ -56,7 +56,7 @@ namespace MyHealthApp.Migrations
                     b.HasIndex("PersonId")
                         .IsUnique();
 
-                    b.ToTable("Calendars");
+                    b.ToTable("MyHealthCalendars");
                 });
 
             modelBuilder.Entity("MyHealthApp.Entities.Day", b =>
@@ -70,9 +70,6 @@ namespace MyHealthApp.Migrations
                     b.Property<int>("CalendarId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("LastUpdate")
-                        .HasColumnType("datetime2");
-
                     b.Property<DateTime>("Today")
                         .HasColumnType("datetime2");
 
@@ -80,7 +77,7 @@ namespace MyHealthApp.Migrations
 
                     b.HasIndex("CalendarId");
 
-                    b.ToTable("Days");
+                    b.ToTable("MyDays");
                 });
 
             modelBuilder.Entity("MyHealthApp.Entities.Food", b =>
@@ -99,12 +96,9 @@ namespace MyHealthApp.Migrations
                         .HasMaxLength(300)
                         .HasColumnType("nvarchar(300)");
 
-                    b.Property<DateTime>("LastUpdate")
-                        .HasColumnType("datetime2");
-
                     b.HasKey("Id");
 
-                    b.ToTable("Foods");
+                    b.ToTable("MyFoods");
                 });
 
             modelBuilder.Entity("MyHealthApp.Entities.Person", b =>
@@ -138,12 +132,9 @@ namespace MyHealthApp.Migrations
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.Property<DateTime>("LastUpdate")
-                        .HasColumnType("datetime2");
-
                     b.HasKey("Id");
 
-                    b.ToTable("People");
+                    b.ToTable("MyHealthyPeople");
                 });
 
             modelBuilder.Entity("MyHealthApp.Entities.Workout", b =>
@@ -160,9 +151,6 @@ namespace MyHealthApp.Migrations
                     b.Property<int?>("DayId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("LastUpdate")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("WorkoutName")
                         .IsRequired()
                         .HasMaxLength(300)
@@ -172,7 +160,7 @@ namespace MyHealthApp.Migrations
 
                     b.HasIndex("DayId");
 
-                    b.ToTable("Workouts");
+                    b.ToTable("MyWorkouts");
                 });
 
             modelBuilder.Entity("DayFood", b =>

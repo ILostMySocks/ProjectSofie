@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyHealthApp;
 
@@ -11,9 +12,11 @@ using MyHealthApp;
 namespace MyHealthApp.Migrations
 {
     [DbContext(typeof(MyHealthAppContext))]
-    partial class MyHealthAppContextModelSnapshot : ModelSnapshot
+    [Migration("20231203150831_added-base-entity")]
+    partial class addedbaseentity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

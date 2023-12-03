@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace MyHealthApp.Entities
 {
-    public class Day
+    public class Day : BaseEntity
     {
-        public int Id { get; set; }
         public DateTime Today { get; set; }
-        public List<Food> MyFoodToday { get; set; }
-        public List<Workout> MyWorkoutsToday { get; set; }
-        public Calendar MyHealthCalendar { get; set; }
+        public List<Food> Food { get; set; }
+        public List<Workout> Workouts { get; set; }
+        public Calendar Calendar { get; set; }
 
     }
 }

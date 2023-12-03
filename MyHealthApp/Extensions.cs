@@ -31,20 +31,25 @@ namespace MyHealthApp
                 .HasMaxLength(250);
 
             mb.Entity<Person>()
-                .HasOne(p => p.MyHealthCalendar)
-                .WithOne(c => c.MyHealthyPerson)
-                .HasForeignKey<Calendar>(c => c.MyHealthyPersonId);
+                .Property(p => p.Email)
+                .IsRequired(true)
+                .HasMaxLength(254);
+
+            mb.Entity<Person>()
+                .HasOne(p => p.Calendar)
+                .WithOne(c => c.Person)
+                .HasForeignKey<Calendar>(c => c.PersonId);
         }
 
         public static void DayConfig(this ModelBuilder mb)
         {
             mb.Entity<Day>()
-                .HasOne(d => d.MyHealthCalendar)
-                .WithMany(c => c.MyHealthyDays);
+                .HasOne(d => d.Calendar)
+                .WithMany(c => c.Days);
 
             mb.Entity<Day>()
-                .HasMany(f => f.MyFoodToday)
-                .WithMany(c => c.DaysEaten);
+                .HasMany(f => f.Food)
+                .WithMany(c => c.Days);
         }
 
         public static void WorkoutConfig(this ModelBuilder mb)

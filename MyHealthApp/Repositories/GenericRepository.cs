@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MyHealthApp.Entities;
+using MyHealthApp.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,8 +12,8 @@ namespace MyHealthApp.Repositories
     public class GenericRepository<TEntity> : IGenericRepository<TEntity>
         where TEntity : BaseEntity
     {
-        private readonly DbContext _dbContext;
-        private readonly DbSet<TEntity> _dbSet;
+        internal readonly DbContext _dbContext;
+        internal readonly DbSet<TEntity> _dbSet;
 
         public GenericRepository(DbContext dbContext)
         {

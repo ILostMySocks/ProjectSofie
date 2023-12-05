@@ -2896,9 +2896,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sofie\\Documents\\Graduaat programmeren\\Jaar 3\\Programmeren Specialisatie\\Project\\ProjectSofie\\MyHealthApp\\MyHealthApp.csproj",
-      "projectName": "MyHealthApp",
-      "projectPath": "C:\\Users\\sofie\\Documents\\Graduaat programmeren\\Jaar 3\\Programmeren Specialisatie\\Project\\ProjectSofie\\MyHealthApp\\MyHealthApp.csproj",
+      "projectUniqueName": "C:\\Users\\sofie\\Documents\\Graduaat programmeren\\Jaar 3\\Programmeren Specialisatie\\Project\\ProjectSofie\\MyHealthApp\\EFDALMyHealthApp.csproj",
+      "projectName": "EFDALMyHealthApp",
+      "projectPath": "C:\\Users\\sofie\\Documents\\Graduaat programmeren\\Jaar 3\\Programmeren Specialisatie\\Project\\ProjectSofie\\MyHealthApp\\EFDALMyHealthApp.csproj",
       "packagesPath": "C:\\Users\\sofie\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\sofie\\Documents\\Graduaat programmeren\\Jaar 3\\Programmeren Specialisatie\\Project\\ProjectSofie\\MyHealthApp\\obj\\",
       "projectStyle": "PackageReference",

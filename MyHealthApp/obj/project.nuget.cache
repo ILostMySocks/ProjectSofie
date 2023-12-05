@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b0SCnGAJIM28cYIc/1gD8DHk+JlpQkY0A0JlUEI4CT5POX9kc5mF0Hfr/32RK8ug5B5lOvv7U2JK6lSwgsY0kw==",
+  "dgSpecHash": "zth0fCh9Veh+VxlYQjLuGOlF78YuSd7cZcj0PsAJzkEKH089YsaEHRFwTHSi9jr79B1u2mWEIXW3C9EtaPy2rg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sofie\\Documents\\Graduaat programmeren\\Jaar 3\\Programmeren Specialisatie\\Project\\ProjectSofie\\MyHealthApp\\MyHealthApp.csproj",
+  "projectFilePath": "C:\\Users\\sofie\\Documents\\Graduaat programmeren\\Jaar 3\\Programmeren Specialisatie\\Project\\ProjectSofie\\MyHealthApp\\EFDALMyHealthApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sofie\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\sofie\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

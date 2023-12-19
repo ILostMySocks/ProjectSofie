@@ -407,3 +407,5 @@ FodyWeavers.xsd
 *.json
 *.cache
 .vs/ProjectSofie/DesignTimeBuild/.dtbcache.v2
+*.bin
+*.v2

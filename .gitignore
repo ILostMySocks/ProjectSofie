@@ -399,3 +399,10 @@ FodyWeavers.xsd
 *.sln.iml
 *.cache
 *.json
+.vs/ProjectSofie/v17/.suo
+*.cache
+*.json
+*.props
+*.targets
+*.json
+*.cache

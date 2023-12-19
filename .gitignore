@@ -406,3 +406,4 @@ FodyWeavers.xsd
 *.targets
 *.json
 *.cache
+.vs/ProjectSofie/DesignTimeBuild/.dtbcache.v2

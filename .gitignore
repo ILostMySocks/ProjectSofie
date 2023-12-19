@@ -364,3 +364,8 @@ FodyWeavers.xsd
 *.bin
 .vs/ProjectEvaluation/projectsofie.projects.v7.bin
 *.bin
+*.cache
+.vs/ProjectSofie/v17/.suo
+*.json
+*.props
+*.targets

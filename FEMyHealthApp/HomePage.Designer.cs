@@ -1,6 +1,6 @@
 ﻿namespace FEMyHealthApp
 {
-    partial class Form1
+    partial class HomePage
     {
         /// <summary>
         ///  Required designer variable.

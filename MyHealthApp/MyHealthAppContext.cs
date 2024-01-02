@@ -1,7 +1,8 @@
 ﻿using MyHealthApp.Entities;
 using Microsoft.EntityFrameworkCore;
+using MyHealthApp;
 
-namespace MyHealthApp
+namespace EFDALMyHealthApp
 {
     public class MyHealthAppContext : DbContext
     {

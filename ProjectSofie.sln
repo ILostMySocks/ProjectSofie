@@ -5,11 +5,11 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFDALMyHealthApp", "MyHealthApp\EFDALMyHealthApp.csproj", "{CFB7990F-A626-4957-BD3B-6A0380E4ACF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLMyHealthApp", "BLMyHealthApp\BLMyHealthApp.csproj", "{A61FBB26-2ECF-4BA2-A3E0-E534297FC548}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLMyHealthApp", "BLMyHealthApp\BLMyHealthApp.csproj", "{A61FBB26-2ECF-4BA2-A3E0-E534297FC548}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLTests", "BLTests\BLTests.csproj", "{64C08E46-724D-44F5-91C8-5FB5D5BFCB7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLTests", "BLTests\BLTests.csproj", "{64C08E46-724D-44F5-91C8-5FB5D5BFCB7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FEMyHealthApp", "FEMyHealthApp\FEMyHealthApp.csproj", "{11FD7F3A-AF9A-47B2-8BFF-FD9F06FE6810}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FEMyHealthApp", "FEMyHealthApp\FEMyHealthApp.csproj", "{11FD7F3A-AF9A-47B2-8BFF-FD9F06FE6810}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -48,7 +48,7 @@ namespace MyHealthApp
                 .WithMany(c => c.Days);
 
             mb.Entity<Day>()
-                .HasMany(f => f.Food)
+                .HasMany(f => f.Foods)
                 .WithMany(c => c.Days);
         }
 

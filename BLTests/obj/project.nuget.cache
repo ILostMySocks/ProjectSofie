@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qU8gnfPEJ0Ql3fyJypHEXXz5Zy+djzj9X2gQF9WIASNm3wGIUtQV+OOpb1m46t2t5fquY0+k2kNEyQsoT94R6Q==",
+  "dgSpecHash": "RoBVMtg8TJYkH6aBuS7KxbjpyT1zh7f8QNONXXQOwyImDODcxv+iuY7tXb4y1ZKCAuMuKBuznSvYUjmUzsyhsQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\sofie\\Documents\\Graduaat programmeren\\Jaar 3\\Programmeren Specialisatie\\Project\\ProjectSofie\\BLTests\\BLTests.csproj",
   "expectedPackageFiles": [
@@ -13,9 +13,10 @@
     "C:\\Users\\sofie\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\sofie\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",
     "C:\\Users\\sofie\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.0\\microsoft.data.sqlclient.sni.runtime.5.1.0.nupkg.sha512",
-    "C:\\Users\\sofie\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.13\\microsoft.entityframeworkcore.7.0.13.nupkg.sha512",
-    "C:\\Users\\sofie\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.13\\microsoft.entityframeworkcore.abstractions.7.0.13.nupkg.sha512",
-    "C:\\Users\\sofie\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.13\\microsoft.entityframeworkcore.analyzers.7.0.13.nupkg.sha512",
+    "C:\\Users\\sofie\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.15\\microsoft.entityframeworkcore.7.0.15.nupkg.sha512",
+    "C:\\Users\\sofie\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.15\\microsoft.entityframeworkcore.abstractions.7.0.15.nupkg.sha512",
+    "C:\\Users\\sofie\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.15\\microsoft.entityframeworkcore.analyzers.7.0.15.nupkg.sha512",
+    "C:\\Users\\sofie\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\7.0.15\\microsoft.entityframeworkcore.inmemory.7.0.15.nupkg.sha512",
     "C:\\Users\\sofie\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.13\\microsoft.entityframeworkcore.relational.7.0.13.nupkg.sha512",
     "C:\\Users\\sofie\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.13\\microsoft.entityframeworkcore.sqlserver.7.0.13.nupkg.sha512",
     "C:\\Users\\sofie\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",

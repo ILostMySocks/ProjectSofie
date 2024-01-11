@@ -9,7 +9,7 @@ namespace MyHealthApp.Entities
     public class Day : BaseEntity
     {
         public DateTime Today { get; set; }
-        public List<Food> Food { get; set; }
+        public List<Food> Foods { get; set; }
         public List<Workout> Workouts { get; set; }
         public Calendar Calendar { get; set; }
 

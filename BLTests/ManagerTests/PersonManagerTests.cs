@@ -43,29 +43,9 @@ namespace BLTests.ManagerTests
         }
 
 
-        [TestMethod]
-        public void TestValidInputCorrectProduct()
-        {
-            //Arrange
 
-            //Act
-            var result = _personManager.Test(5, 2);
 
-            //Assert
-            Assert.AreEqual(10, result);
-        }
 
-        [TestMethod]
-        public void TestValidInputZeroCorrectProduct()
-        {
-            //Arrange
-
-            //Act
-            var result = _personManager.Test(5, 0);
-
-            //Assert
-            Assert.AreEqual(0, result);
-        }
 
         [TestMethod]
         public void GetAllCorrectResult()

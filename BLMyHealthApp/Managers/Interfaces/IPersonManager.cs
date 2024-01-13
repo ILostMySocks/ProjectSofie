@@ -1,4 +1,5 @@
-﻿using MyHealthApp.Entities;
+﻿using BLMyHealthApp.Dtos;
+using MyHealthApp.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace BLMyHealthApp.Managers.Interfaces
 {
     public interface IPersonManager
     {
-        int Test(int a, int b);
+        List<PersonSearchResultDto> GetPersonSearch(PersonSearchValuesDto personQuery);
     }
 }

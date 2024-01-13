@@ -19,5 +19,7 @@ namespace BLMyHealthApp.Managers.Interfaces
         void Update(TEntity entity);
 
         void Delete(int id);
+
+
     }
 }

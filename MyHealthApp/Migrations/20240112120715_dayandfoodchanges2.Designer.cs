@@ -4,6 +4,7 @@ using EFDALMyHealthApp;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MyHealthApp.Migrations
 {
     [DbContext(typeof(MyHealthAppContext))]
-    partial class MyHealthAppContextModelSnapshot : ModelSnapshot
+    [Migration("20240112120715_dayandfoodchanges2")]
+    partial class dayandfoodchanges2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

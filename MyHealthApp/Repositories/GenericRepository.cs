@@ -4,6 +4,7 @@ using MyHealthApp.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -55,6 +56,25 @@ namespace MyHealthApp.Repositories
         public virtual void SaveChanges()
         {
             _dbContext.SaveChanges();
+        }
+
+        public virtual List<TEntity> Search(List<Expression<Func<TEntity, bool>>> filters, Expression<Func<TEntity, object>> orderExpression, bool orderAsc = true)
+        {
+            var queryAble = _dbSet.AsQueryable();
+
+            filters ??= new();
+
+            foreach (var filter in filters)
+            {
+                if (filter == null) continue;
+                queryAble = queryAble.Where(filter);
+            }
+
+            queryAble = orderAsc ? queryAble.OrderBy(orderExpression) : queryAble.OrderByDescending(orderExpression);
+
+            var result = queryAble.ToList();
+
+            return result;
         }
     }
 }

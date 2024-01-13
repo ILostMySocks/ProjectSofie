@@ -10,8 +10,4 @@
     <ProjectReference Include="..\MyHealthApp\EFDALMyHealthApp.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Dtos\" />
-  </ItemGroup>
-
 </Project>

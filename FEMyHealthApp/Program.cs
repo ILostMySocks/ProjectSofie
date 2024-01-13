@@ -31,17 +31,17 @@ namespace FEMyHealthApp
             services.AddTransient<IPersonManager, PersonManager>();
             services.AddTransient<IPersonRepository, PersonRepository>();
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-            services.AddSingleton<HomePage>();
-            services.AddTransient<PersonalCalendar>();
+            services.AddSingleton<HomePageForm>();
+            services.AddTransient<PersonalCalendarForm>();
 
 
             //using ServiceProvider serviceProvider = services.BuildServiceProvider();    
             ServiceProvider = services.BuildServiceProvider();
 
-            var mainForm = ServiceProvider.GetService<HomePage>();
+            var homePage = ServiceProvider.GetService<HomePageForm>();
 
 
-            Application.Run(mainForm);
+            Application.Run(homePage);
         }
     }
 }

@@ -11,7 +11,7 @@ namespace MyHealthApp.Repositories.Interfaces
     {
         List<TEntity> GetAll();
         TEntity GetById(int id);
-        int Add(TEntity entity);
+        void Add(TEntity entity);
         void Update(TEntity entity);
         void Delete(int id);
         void SaveChanges();

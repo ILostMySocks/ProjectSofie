@@ -1,11 +1,21 @@
 ﻿using MyHealthApp.Entities;
 using Microsoft.EntityFrameworkCore;
 using MyHealthApp;
+using MyHealthApp.Migrations;
 
 namespace EFDALMyHealthApp
 {
     public class MyHealthAppContext : DbContext
     {
+        public MyHealthAppContext() : base() //***
+        {
+
+        }
+        public MyHealthAppContext(DbContextOptions options) : base(options) //***
+        {
+
+        }
+
         public DbSet<Person> People { get; set; }
         public DbSet<Calendar> Calendars { get; set; }
         public DbSet<Day> Days { get; set; }

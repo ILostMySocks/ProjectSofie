@@ -14,7 +14,7 @@ namespace BLMyHealthApp.Managers.Interfaces
 
         TEntity GetById(int id);
 
-        int Add(TEntity entity);
+        void Add(TEntity entity);
 
         void Update(TEntity entity);
 

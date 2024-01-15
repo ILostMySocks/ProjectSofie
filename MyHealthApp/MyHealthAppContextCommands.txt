@@ -1,2 +1,2 @@
-﻿Add-Migration initial -StartupProject EFDalMyHealthApp
-Update-Database initial -StartupProject EFDalMyHealthApp
+﻿Add-Migration initial -StartupProject MyHealthApp
+Update-Database initial -StartupProject MyHealthApp

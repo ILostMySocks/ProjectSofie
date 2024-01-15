@@ -11,5 +11,8 @@ namespace BLMyHealthApp.Managers.Interfaces
     public interface IPersonManager
     {
         List<PersonSearchResultDto> GetPersonSearch(PersonSearchValuesDto personQuery);
+        void Add(Person Person);
+    
     }
+
 }

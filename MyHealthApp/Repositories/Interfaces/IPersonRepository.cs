@@ -9,6 +9,6 @@ namespace MyHealthApp.Repositories.Interfaces
 {
     public interface IPersonRepository : IGenericRepository<Person>
     {
-        Person SpecialGet(int id);
+        void Add (Person person);
     }
 }

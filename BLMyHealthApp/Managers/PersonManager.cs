@@ -16,19 +16,13 @@ namespace BLMyHealthApp.Managers
         private IPersonRepository _personRepository;
         public PersonManager(IPersonRepository personRepository) : base(personRepository)
         {
+            _personRepository = personRepository;
         }
 
 
-        public override int Add(Person person)
+        public override void Add(Person person)
         {
-            if (person == null)
-                throw new ArgumentNullException(nameof(person));
-
-            if(person.BirthDate < new DateTime(1900,1,1))
-                throw new ArgumentOutOfRangeException(nameof(person.BirthDate));
-
-            return base.Add(person);
-            
+            _personRepository.Add(person);
         }
 
         public List<PersonSearchResultDto> GetPersonSearch(PersonSearchValuesDto personQuery)

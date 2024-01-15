@@ -29,9 +29,9 @@ namespace BLMyHealthApp.Managers
             return _repository.GetById(id);
         }
 
-        public virtual int Add(TEntity entity)
+        public virtual void Add(TEntity entity)
         {
-            return _repository.Add(entity);
+            _repository.Add(entity);
         }
 
         public virtual void Update(TEntity entity)

@@ -28,11 +28,17 @@ namespace FEMyHealthApp
 
             services.AddDbContext<MyHealthAppContext>(opt => opt.UseSqlServer(connectionString)
                                                     , ServiceLifetime.Transient);
+
             services.AddTransient<IPersonManager, PersonManager>();
             services.AddTransient<IPersonRepository, PersonRepository>();
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
             services.AddSingleton<HomePageForm>();
             services.AddTransient<PersonalCalendarForm>();
+            services.AddTransient<NewPersonForm>();
+            services.AddTransient<DayForm>();
+            services.AddTransient<AddFoodForm>();
+            services.AddTransient<AddWorkoutForm>();
 
 
             //using ServiceProvider serviceProvider = services.BuildServiceProvider();    

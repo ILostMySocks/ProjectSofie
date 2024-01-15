@@ -32,13 +32,11 @@ namespace MyHealthApp.Repositories
             return _dbSet.AsNoTracking().ToList();
         }
 
-        public virtual int Add(TEntity entity)
+        public virtual void Add(TEntity entity)
         {
             entity.LastUpdate = DateTime.Now;
             _dbSet.Add(entity);
             _dbContext.SaveChangesAsync();
-
-            return entity.Id;
         }
 
         public virtual void Update(TEntity entity)

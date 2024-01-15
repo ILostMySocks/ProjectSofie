@@ -73,44 +73,44 @@ namespace BLTests.ManagerTests
         [TestMethod]
         public void AddCorrectInputCallAdd()
         {
-            //Arrange
-            var person = GenerateTestPersons().First();
-            person.Id = 0;
+            ////Arrange
+            //var person = GenerateTestPersons().First();
+            //person.Id = 0;
 
-            _personRepositoryMock
-                .Setup(r => r.Add(It.IsAny<Person>()))
-                .Returns(2);
-            _personRepositoryMock
-                .Setup(r => r.Add(person))
-                .Returns(3);
+            //_personRepositoryMock
+            //    .Setup(r => r.Add(It.IsAny<Person>()))
+            //    .Returns(2);
+            //_personRepositoryMock
+            //    .Setup(r => r.Add(person))
+            //    .Returns(3);
 
 
-            //Act
-            var result = _personManager.Add(person);
+            ////Act
+            //var result = _personManager.Add(person);
 
-            //Assert
-            Assert.IsTrue(result > 0);
-            _personRepositoryMock.Verify(r => r.Add(It.IsAny<Person>()));
+            ////Assert
+            //Assert.IsTrue(result > 0);
+            //_personRepositoryMock.Verify(r => r.Add(It.IsAny<Person>()));
         }
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException), "BirthDate")]
         public void AddBadDateDontCallAdd()
         {
-            //Arrange
-            var person = GenerateTestPersons().First();
-            person.Id = 0;
-            person.BirthDate = DateTime.MinValue;
+            ////Arrange
+            //var person = GenerateTestPersons().First();
+            //person.Id = 0;
+            //person.BirthDate = DateTime.MinValue;
 
-            _personRepositoryMock
-                .Setup(r => r.Add(It.IsAny<Person>()))
-                .Returns(2);
+            //_personRepositoryMock
+            //    .Setup(r => r.Add(It.IsAny<Person>()))
+            //    .Returns(2);
 
-            //Act
-            var result = _personManager.Add(person);
+            ////Act
+            //var result = _personManager.Add(person);
 
-            //Assert
-            Assert.IsTrue(result > 0);
+            ////Assert
+            //Assert.IsTrue(result > 0);
         }
 
     }

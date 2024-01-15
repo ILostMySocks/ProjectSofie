@@ -19,12 +19,11 @@ namespace MyHealthApp.Repositories
         {
         }
 
-        public Person SpecialGet(int id)
+        public void Add(Person person)
         {
-            //Zoekt persoon EN zijn/haar calendar
-            var result = _dbSet.Where(p => p.Id == id).Include(p => p.Calendar).FirstOrDefault();
-            return result;
+            _dbContext.Add(person);
         }
+
         
     }
 }

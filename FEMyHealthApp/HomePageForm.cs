@@ -32,5 +32,12 @@ namespace FEMyHealthApp
             List<PersonSearchResultDto> searchResults = _personManager.GetPersonSearch(personQuery);
 
         }
+
+        private void buttonAddNewPerson_Click(object sender, EventArgs e)
+        {
+            var personAdd = Program.ServiceProvider.GetService<NewPersonForm>();
+            personAdd.WindowState = FormWindowState.Maximized;
+            personAdd.Show();
+        }
     }
 }

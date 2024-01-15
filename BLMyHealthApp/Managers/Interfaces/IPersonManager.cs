@@ -12,7 +12,6 @@ namespace BLMyHealthApp.Managers.Interfaces
     {
         List<PersonSearchResultDto> GetPersonSearch(PersonSearchValuesDto personQuery);
         void Add(Person Person);
-    
     }
 
 }

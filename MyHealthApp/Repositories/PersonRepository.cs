@@ -22,6 +22,7 @@ namespace MyHealthApp.Repositories
         public void Add(Person person)
         {
             _dbContext.Add(person);
+            SaveChanges();
         }
 
         

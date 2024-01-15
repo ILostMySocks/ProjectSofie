@@ -29,13 +29,13 @@ namespace BLMyHealthApp.Managers
         {
             List<Expression<Func<Person, bool>>> searchExpression = new();
 
-            if (personQuery?.FirstName != null)
+            if (personQuery?.FirstName != null && personQuery?.FirstName != "")
                 searchExpression.Add(p => p.FirstName == personQuery.FirstName);
 
-            if (personQuery?.LastName != null)
+            if (personQuery?.LastName != null && personQuery?.LastName != "")
                 searchExpression.Add(p => p.LastName == personQuery.LastName);
 
-            if (personQuery?.Email != null)
+            if (personQuery?.Email != null && personQuery?.Email != "")
                 searchExpression.Add(p => p.Email == personQuery.Email);
 
 

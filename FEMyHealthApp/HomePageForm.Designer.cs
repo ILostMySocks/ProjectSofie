@@ -36,9 +36,9 @@
             textBoxLastName = new TextBox();
             textBoxEmail = new TextBox();
             buttonSearch = new Button();
-            dataGridView1 = new DataGridView();
+            dataGridViewSearchResults = new DataGridView();
             buttonAddNewPerson = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewSearchResults).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -113,16 +113,16 @@
             buttonSearch.UseVisualStyleBackColor = true;
             buttonSearch.Click += buttonSearch_Click;
             // 
-            // dataGridView1
+            // dataGridViewSearchResults
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(375, 51);
-            dataGridView1.Margin = new Padding(3, 2, 3, 2);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(278, 236);
-            dataGridView1.TabIndex = 8;
+            dataGridViewSearchResults.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewSearchResults.Location = new Point(375, 51);
+            dataGridViewSearchResults.Margin = new Padding(3, 2, 3, 2);
+            dataGridViewSearchResults.Name = "dataGridViewSearchResults";
+            dataGridViewSearchResults.RowHeadersWidth = 51;
+            dataGridViewSearchResults.RowTemplate.Height = 29;
+            dataGridViewSearchResults.Size = new Size(278, 236);
+            dataGridViewSearchResults.TabIndex = 8;
             // 
             // buttonAddNewPerson
             // 
@@ -141,7 +141,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(700, 338);
             Controls.Add(buttonAddNewPerson);
-            Controls.Add(dataGridView1);
+            Controls.Add(dataGridViewSearchResults);
             Controls.Add(buttonSearch);
             Controls.Add(textBoxEmail);
             Controls.Add(textBoxLastName);
@@ -154,7 +154,7 @@
             Name = "HomePageForm";
             Text = "HomePage";
             Load += HomePage_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewSearchResults).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -169,7 +169,7 @@
         private TextBox textBoxLastName;
         private TextBox textBoxEmail;
         private Button buttonSearch;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridViewSearchResults;
         private Button buttonAddNewPerson;
     }
 }

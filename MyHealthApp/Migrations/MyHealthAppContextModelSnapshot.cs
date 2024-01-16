@@ -34,7 +34,7 @@ namespace MyHealthApp.Migrations
 
                     b.HasIndex("FoodsId");
 
-                    b.ToTable("DayFood");
+                    b.ToTable("DayFood", (string)null);
                 });
 
             modelBuilder.Entity("MyHealthApp.Entities.Calendar", b =>
@@ -56,7 +56,7 @@ namespace MyHealthApp.Migrations
                     b.HasIndex("PersonId")
                         .IsUnique();
 
-                    b.ToTable("Calendars");
+                    b.ToTable("Calendars", (string)null);
                 });
 
             modelBuilder.Entity("MyHealthApp.Entities.Day", b =>
@@ -80,7 +80,7 @@ namespace MyHealthApp.Migrations
 
                     b.HasIndex("CalendarId");
 
-                    b.ToTable("Days");
+                    b.ToTable("Days", (string)null);
                 });
 
             modelBuilder.Entity("MyHealthApp.Entities.Food", b =>
@@ -104,7 +104,7 @@ namespace MyHealthApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Foods");
+                    b.ToTable("Foods", (string)null);
                 });
 
             modelBuilder.Entity("MyHealthApp.Entities.Person", b =>
@@ -143,7 +143,7 @@ namespace MyHealthApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("People");
+                    b.ToTable("People", (string)null);
                 });
 
             modelBuilder.Entity("MyHealthApp.Entities.Workout", b =>
@@ -172,7 +172,7 @@ namespace MyHealthApp.Migrations
 
                     b.HasIndex("DayId");
 
-                    b.ToTable("Workouts");
+                    b.ToTable("Workouts", (string)null);
                 });
 
             modelBuilder.Entity("DayFood", b =>

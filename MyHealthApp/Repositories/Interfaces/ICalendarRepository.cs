@@ -12,5 +12,7 @@ namespace EFDALMyHealthApp.Repositories.Interfaces
     {
         IQueryable<Calendar> GetCalendarByPersonId(int personId);
         void AddDayToCalendar(int calendarId, Day day);
+        void AddFoodToDay(int calendarId, int dayId, Food food);
+        void AddWorkoutToDay(int calendarId, int dayId, Workout workout);
     }
 }

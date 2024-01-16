@@ -25,7 +25,33 @@ namespace EFDALMyHealthApp.Repositories
             var calendar = _dbSet.Find(calendarId);
             if (calendar != null)
             {
-                calendar.Days.Add(day);
+                var existingDay = calendar.Days.FirstOrDefault(d => d.Today.Date == day.Today.Date);
+
+                if (existingDay == null)
+                {
+                    calendar.Days.Add(day);
+                }
+            }
+        }
+        public void AddFoodToDay(int calendarId, int dayId, Food food)
+        {
+            var calendar = _dbSet.Find(calendarId);
+            var day = calendar?.Days.FirstOrDefault(d => d.Id == dayId);
+
+            if (day != null)
+            {
+                day.Foods.Add(food);
+            }
+        }
+
+        public void AddWorkoutToDay(int calendarId, int dayId, Workout workout)
+        {
+            var calendar = _dbSet.Find(calendarId);
+            var day = calendar?.Days.FirstOrDefault(d => d.Id == dayId);
+
+            if (day != null)
+            {
+                day.Workouts.Add(workout);
             }
         }
     }

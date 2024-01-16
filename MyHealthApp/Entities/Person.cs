@@ -15,6 +15,7 @@ namespace MyHealthApp.Entities
         public GenderIdentity GenderIdentity { get; set; }
         public string Email {  get; set; }
         public Calendar Calendar { get; set; }
+
     }
 
     public enum GenderIdentity

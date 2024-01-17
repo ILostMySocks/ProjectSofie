@@ -1,4 +1,5 @@
-﻿using MyHealthApp.Entities;
+﻿using BLMyHealthApp.Dtos;
+using MyHealthApp.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,12 @@ namespace BLMyHealthApp.Managers.Interfaces
 {
     public interface ICalendarManager
     {
-        IQueryable<Calendar> GetCalendarByPersonId(int personId);
-        void AddDayToCalendar(int calendarId, Day day);
+        Calendar GetCalendarByPersonId(int personId);
+        Calendar GetCalendarById(int calendarId);
+        Day AddDayToCalendar(int calendarId, DateTime day);
+        List<DayResultDto> GetDayResult(List<Day> dayQuery);
+        void AddFoodToDay(int calendarId, int dayId, Food food);
+        void AddWorkoutToDay(int calendarId, int dayId, Workout workout);
+
     }
 }

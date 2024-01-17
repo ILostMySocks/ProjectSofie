@@ -16,7 +16,7 @@ namespace FEMyHealthApp
 
             dataGridViewSearchResults.CellDoubleClick += dataGridViewSearchResults_CellDoubleClick;
             dataGridViewSearchResults.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewSearchResults.ReadOnly = true;
+            dataGridViewSearchResults.ReadOnly = false;
 
             _personManager = personManager;
         }
@@ -35,6 +35,7 @@ namespace FEMyHealthApp
             personQuery.LastName = textBoxLastName.Text;
             personQuery.Email = textBoxEmail.Text;
             List<PersonSearchResultDto> searchResults = _personManager.GetPersonSearch(personQuery);
+
             dataGridViewSearchResults.DataSource = searchResults;
 
 
@@ -52,12 +53,14 @@ namespace FEMyHealthApp
             if (dataGridViewSearchResults.SelectedRows.Count > 0)
             {
                 // Get id from selected row
-                int selectedId = Convert.ToInt32(dataGridViewSearchResults.SelectedRows[0].Cells["Id"].Value);
+                int selectedId = Convert.ToInt32(dataGridViewSearchResults.SelectedRows[0].Cells["ID"].Value);
 
-                PersonalCalendarForm personalCalendarForm = new PersonalCalendarForm(selectedId);
-
-                personalCalendarForm.Show();
+                var personalCalendar = Program.ServiceProvider.GetService<PersonalCalendarForm>();
+                personalCalendar.CalendarId = selectedId;
+                personalCalendar.WindowState = FormWindowState.Maximized;
+                personalCalendar.Show();
             }
         }
+
     }
 }

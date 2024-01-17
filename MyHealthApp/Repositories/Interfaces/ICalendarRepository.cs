@@ -10,8 +10,9 @@ namespace EFDALMyHealthApp.Repositories.Interfaces
 {
     public interface ICalendarRepository : IGenericRepository<Calendar>
     {
-        IQueryable<Calendar> GetCalendarByPersonId(int personId);
-        void AddDayToCalendar(int calendarId, Day day);
+        Calendar GetCalendarByPersonId(int personId);
+        Calendar GetCalendarById(int calendarId);
+        Day AddDayToCalendar(int calendarId, DateTime today);
         void AddFoodToDay(int calendarId, int dayId, Food food);
         void AddWorkoutToDay(int calendarId, int dayId, Workout workout);
     }

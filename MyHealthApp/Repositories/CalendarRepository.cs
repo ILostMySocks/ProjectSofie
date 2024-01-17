@@ -16,22 +16,40 @@ namespace EFDALMyHealthApp.Repositories
         }
 
         // Implement the method to get calendars by person id
-        public IQueryable<Calendar> GetCalendarByPersonId(int personId)
+        public Calendar GetCalendarByPersonId(int personId)
         {
-            return _dbSet.Where(c => c.PersonId == personId);
+            return _dbSet.FirstOrDefault(c => c.PersonId == personId);
         }
-        public void AddDayToCalendar(int calendarId, Day day)
+
+        public Calendar GetCalendarById(int calendarId)
+        {
+            return _dbSet.Find(calendarId);
+        }
+        public Day AddDayToCalendar(int calendarId, DateTime day)
         {
             var calendar = _dbSet.Find(calendarId);
-            if (calendar != null)
-            {
-                var existingDay = calendar.Days.FirstOrDefault(d => d.Today.Date == day.Today.Date);
 
-                if (existingDay == null)
-                {
-                    calendar.Days.Add(day);
-                }
+            if (calendar.Days == null)
+            {
+                calendar.Days = new List<Day>();
             }
+
+            var existingDay = calendar.Days.FirstOrDefault(d => d.Today.Date == day.Date);
+
+            if (existingDay == null)
+            {
+                Day newDay = new Day()
+                {
+                    Today = day
+                };
+
+                calendar.Days.Add(newDay);
+                SaveChanges();
+                return newDay;
+
+            } else return existingDay;
+
+
         }
         public void AddFoodToDay(int calendarId, int dayId, Food food)
         {
@@ -40,8 +58,11 @@ namespace EFDALMyHealthApp.Repositories
 
             if (day != null)
             {
+                if (day.Foods == null)
+                    day.Foods = new List<Food>();
                 day.Foods.Add(food);
             }
+            SaveChanges();
         }
 
         public void AddWorkoutToDay(int calendarId, int dayId, Workout workout)

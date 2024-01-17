@@ -6,6 +6,8 @@ using MyHealthApp.Repositories.Interfaces;
 using MyHealthApp.Repositories;
 using MyHealthApp;
 using EFDALMyHealthApp;
+using EFDALMyHealthApp.Repositories.Interfaces;
+using EFDALMyHealthApp.Repositories;
 
 namespace FEMyHealthApp
 {
@@ -31,6 +33,8 @@ namespace FEMyHealthApp
 
             services.AddTransient<IPersonManager, PersonManager>();
             services.AddTransient<IPersonRepository, PersonRepository>();
+            services.AddTransient<ICalendarManager, CalendarManager>();
+            services.AddTransient<ICalendarRepository, CalendarRepository>();
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
             services.AddSingleton<HomePageForm>();
